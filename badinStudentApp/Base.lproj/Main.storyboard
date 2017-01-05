@@ -1,26 +1,872 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9KW-tu-ENE">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="View1" id="BYZ-38-t0r" customClass="ViewController" customModule="badinStudentApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badin-rams" translatesAutoresizingMaskIntoConstraints="NO" id="QUH-Ol-1ld">
+                                <rect key="frame" x="34" y="64" width="346" height="156"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6Z6-Yd-BB5">
+                                <rect key="frame" x="68" y="228" width="279" height="336"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="left" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oaD-rD-UiO">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zXv-rW-4zY">
+                                                <rect key="frame" x="0.0" y="0.0" width="164" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Bell  Schedule">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="s67-If-xoJ" kind="push" id="Ids-9b-Pvf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBe-7I-Bj0">
+                                                <rect key="frame" x="0.0" y="75" width="164" height="36"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Spirit Shop">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="0kZ-f3-ZwL" kind="push" id="b6D-ne-hVX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Nah-FX-Pot">
+                                                <rect key="frame" x="0.0" y="126" width="164" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal">
+                                                    <string key="title">Students of 
+the Month</string>
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="gc4-kz-IsU" kind="push" id="UPS-QO-5GD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mjf-5O-vCs">
+                                                <rect key="frame" x="0.0" y="201" width="164" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal">
+                                                    <string key="title">Daily 
+Announcements</string>
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="RoN-tN-yDT" kind="push" id="LEL-sk-7pz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RlI-F0-gMR">
+                                                <rect key="frame" x="0.0" y="276" width="164" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal">
+                                                    <string key="title">Scholarship
+Opportunities</string>
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="8Rm-jE-GnV" kind="push" id="Hui-jD-OGJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-6c-9uM">
+                                        <rect key="frame" x="179" y="0.0" width="100" height="336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Rm1-uC-JTn">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Clubs &amp;  Activities">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="qwC-Zq-ejC" kind="push" id="HW8-oE-oXS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="u3O-dy-Aw1">
+                                                <rect key="frame" x="0.0" y="75" width="100" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Campus  Ministry">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="MVr-Rg-12E" kind="push" id="FAc-t6-Rlv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cYZ-ED-3lb">
+                                                <rect key="frame" x="0.0" y="150" width="100" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="M &amp; M  Program">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="634-yn-RVx" kind="push" id="f7e-HQ-jCL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uM5-Ou-PgY">
+                                                <rect key="frame" x="0.0" y="225" width="100" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Cafeteria  Menu">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="w2L-gO-zDl" kind="push" identifier="cafiteriaMenu" id="Uv3-V8-P3R"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="OX8-3t-Esu">
+                                                <rect key="frame" x="0.0" y="300" width="100" height="36"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Calculator">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="vEC-gY-FOy" kind="push" identifier="Calculator" id="aln-8B-xiy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Z6-Yd-BB5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="1Te-v3-tFv"/>
+                            <constraint firstItem="QUH-Ol-1ld" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="64" id="ATz-rv-LmM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QUH-Ol-1ld" secondAttribute="trailing" constant="14" id="E5D-HJ-uuQ"/>
+                            <constraint firstItem="6Z6-Yd-BB5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="228" id="POL-jJ-3bU"/>
+                            <constraint firstItem="QUH-Ol-1ld" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="PwW-aV-7dH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Z6-Yd-BB5" secondAttribute="trailing" constant="47" id="Ssa-Ru-7Ml"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="QUH-Ol-1ld" secondAttribute="bottom" constant="516" id="i8j-dy-FP9"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Welcome To The Badin Student App" id="JFD-cQ-hbS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1695.6521739130435" y="147.55434782608697"/>
+        </scene>
+        <!--Bell Schedule-->
+        <scene sceneID="FXD-IS-662">
+            <objects>
+                <viewController title="Bell Schedule" modalTransitionStyle="crossDissolve" id="s67-If-xoJ" customClass="bellScheduleViewController" customModule="badinStudentApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fGC-Eq-POP"/>
+                        <viewControllerLayoutGuide type="bottom" id="EUp-iW-8fr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cPY-ef-nh2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XeD-T0-lZ8">
+                                <rect key="frame" x="56.333333333333343" y="93.999999999999986" width="302.33333333333337" height="82.666666666666643"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAj-kU-Xic">
+                                        <rect key="frame" x="0.0" y="0.0" width="302.33333333333337" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bell Schedule " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAa-sw-Pse">
+                                        <rect key="frame" x="0.0" y="40.666666666666657" width="302.33333333333337" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wkB-oD-g8w">
+                                <rect key="frame" x="20" y="184" width="374" height="479"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">#1—REGULAR SCHEDULE WARNING BELL: 7:25
+HOMEROOM: 7:30 - 7:40
+ (A) 1st 7:43 - 8:27
+ (B) 2nd 8:30 - 9:14
+ (C) 3rd 9:17 - 10:01
+ (D) 4th 10:04 - 10:48
+ (E) 5th 10:51 - 11:35
+ (F) 6th 11:38 - 12:55
+ 6th A 11:38 - 12:08 1st Lunch
+ 1 12:11 - 12:55 Class
+ 6th B 11:38 - 12:22 Class
+ 12:25 - 12:55 2nd Lunch
+ (G) 7th 12:58 - 1:42
+ (H) 8th 1:45 - 2:30 </string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XeD-T0-lZ8" firstAttribute="centerX" secondItem="cPY-ef-nh2" secondAttribute="centerX" id="4c5-eb-o5P"/>
+                            <constraint firstItem="XeD-T0-lZ8" firstAttribute="top" secondItem="fGC-Eq-POP" secondAttribute="bottom" constant="30" id="6oF-x7-Y83"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tyx-M9-caj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9da-z5-FIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117" y="893"/>
+        </scene>
+        <!--Cafeteria Menu-->
+        <scene sceneID="bbA-PP-TwV">
+            <objects>
+                <viewController title="Cafeteria Menu" modalTransitionStyle="partialCurl" id="w2L-gO-zDl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fQp-Ae-ypR"/>
+                        <viewControllerLayoutGuide type="bottom" id="VHn-QK-Z0e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dRd-Hi-yI6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wpp-k7-K3j">
+                                <rect key="frame" x="56.333333333333343" y="93.999999999999986" width="302.33333333333337" height="82.666666666666643"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvj-RR-ceJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="302.33333333333337" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafeteria Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6is-p4-WNp">
+                                        <rect key="frame" x="0.0" y="40.666666666666657" width="302.33333333333337" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkY-DN-CDZ">
+                                <rect key="frame" x="21" y="209" width="372" height="527.66666666666663"/>
+                                <string key="text">Week of January 2, 2017
+
+Monday
+No School - Happy New Year! Tuesday
+CHICKEN STRIPS(4) w/SAUCE, $1.80
+SOUP, $2.50
+DESSERT, $0.85
+Wednesday
+CHEESEBURGER, $1.80
+CHICKEN SANDWICH REG &amp; SPICY, $1.80
+SEASONED FRIES, $0.85
+APPLE CRISP w/WHIPPED CREAM, $0.85
+Thursday
+BADIN BOWL 
+   w/CHICKEN, MASHED POTATOES, GRAVY, CORN &amp; CHEESE, $2.00
+CHICKEN NUGGETS (8) w/SAUCE, $1.80
+PEANUT BUTTER PIE, $0.85
+Friday
+PIZZA CHEF PEPPERONI/CHEESE PIZZA, $1.80
+FISH SANDWICH, $2.50
+CHOCOLATE CHIP COOKIE, $0.85
+
+All items subject to change</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mkY-DN-CDZ" firstAttribute="top" secondItem="fQp-Ae-ypR" secondAttribute="bottom" constant="145" id="1Jx-B6-upK"/>
+                            <constraint firstItem="mkY-DN-CDZ" firstAttribute="centerX" secondItem="dRd-Hi-yI6" secondAttribute="centerX" id="Aen-Lt-Pnz"/>
+                            <constraint firstItem="mkY-DN-CDZ" firstAttribute="leading" secondItem="dRd-Hi-yI6" secondAttribute="leadingMargin" constant="1" id="S4r-nt-nA9"/>
+                            <constraint firstItem="wpp-k7-K3j" firstAttribute="centerX" secondItem="dRd-Hi-yI6" secondAttribute="centerX" id="XUE-Mb-Tab"/>
+                            <constraint firstItem="wpp-k7-K3j" firstAttribute="top" secondItem="fQp-Ae-ypR" secondAttribute="bottom" constant="30" id="hh6-Hu-4nU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mkY-DN-CDZ" secondAttribute="trailing" constant="1" id="ts3-e3-qKV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fxC-F3-AET"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fg-Nz-9uJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117" y="1553"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="9Xg-Tu-8Vf">
+            <objects>
+                <viewController title="Calendar" modalTransitionStyle="crossDissolve" id="vEC-gY-FOy" customClass="calculatorViewController" customModule="badinStudentApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dbl-bf-uVY"/>
+                        <viewControllerLayoutGuide type="bottom" id="EEo-WX-Va8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Z5-ck-n3X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ceG-zw-KXm">
+                                <rect key="frame" x="56.333333333333343" y="92.999999999999986" width="302.33333333333337" height="82.666666666666643"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqr-bU-OSU">
+                                        <rect key="frame" x="0.0" y="0.0" width="302.33333333333337" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKh-5r-gMH">
+                                        <rect key="frame" x="0.0" y="40.666666666666657" width="302.33333333333337" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter number 1 here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xaF-5l-GfM">
+                                <rect key="frame" x="87" y="203" width="241" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter number 2 here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4U-8T-eBi">
+                                <rect key="frame" x="87" y="320" width="241" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYV-JB-Xft">
+                                <rect key="frame" x="87" y="415" width="241" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vak-fZ-ZqV">
+                                <rect key="frame" x="56" y="260" width="302" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoy-yg-oVO">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Add"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-fT-p14">
+                                        <rect key="frame" x="57" y="0.0" width="77" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Subtract"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htW-CN-efd">
+                                        <rect key="frame" x="154" y="0.0" width="71" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Multiply"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBa-pl-E1t">
+                                        <rect key="frame" x="245" y="0.0" width="57" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Divide"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vak-fZ-ZqV" firstAttribute="leading" secondItem="5Z5-ck-n3X" secondAttribute="leadingMargin" constant="36" id="2GQ-Vf-3Gx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xaF-5l-GfM" secondAttribute="trailing" constant="66" id="7V1-8a-eWR"/>
+                            <constraint firstItem="zYV-JB-Xft" firstAttribute="leading" secondItem="5Z5-ck-n3X" secondAttribute="leadingMargin" constant="67" id="7t5-2s-dMA"/>
+                            <constraint firstItem="o4U-8T-eBi" firstAttribute="leading" secondItem="5Z5-ck-n3X" secondAttribute="leadingMargin" constant="67" id="AhC-2V-lDN"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="xaF-5l-GfM" secondAttribute="bottom" constant="503" id="BSb-fp-5Dz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o4U-8T-eBi" secondAttribute="trailing" constant="66" id="Bnc-CF-ZB5"/>
+                            <constraint firstItem="vak-fZ-ZqV" firstAttribute="top" secondItem="5Z5-ck-n3X" secondAttribute="topMargin" constant="260" id="JrS-x6-AnH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vak-fZ-ZqV" secondAttribute="trailing" constant="36" id="KcL-Xs-6H5"/>
+                            <constraint firstItem="o4U-8T-eBi" firstAttribute="top" secondItem="5Z5-ck-n3X" secondAttribute="topMargin" constant="320" id="Kx5-JP-PbE"/>
+                            <constraint firstItem="xaF-5l-GfM" firstAttribute="leading" secondItem="5Z5-ck-n3X" secondAttribute="leadingMargin" constant="67" id="QrU-np-Q0a"/>
+                            <constraint firstItem="ceG-zw-KXm" firstAttribute="top" secondItem="5Z5-ck-n3X" secondAttribute="topMargin" constant="93" id="RFO-QJ-8gc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zYV-JB-Xft" secondAttribute="trailing" constant="66" id="Vye-L1-J1M"/>
+                            <constraint firstItem="zYV-JB-Xft" firstAttribute="top" secondItem="5Z5-ck-n3X" secondAttribute="topMargin" constant="415" id="dUz-zZ-1pb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="vak-fZ-ZqV" secondAttribute="bottom" constant="440" id="hZh-YK-2GS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zYV-JB-Xft" secondAttribute="bottom" constant="269" id="lUb-uJ-2og"/>
+                            <constraint firstItem="xaF-5l-GfM" firstAttribute="top" secondItem="5Z5-ck-n3X" secondAttribute="topMargin" constant="203" id="rqk-QC-RIC"/>
+                            <constraint firstItem="ceG-zw-KXm" firstAttribute="centerX" secondItem="5Z5-ck-n3X" secondAttribute="centerX" id="vVX-Mr-rE6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="o4U-8T-eBi" secondAttribute="bottom" constant="386" id="wmC-kw-PMe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mkF-it-jff"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GdT-HW-alY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527.536231884058" y="892.66304347826099"/>
+        </scene>
+        <!--Campus Ministry-->
+        <scene sceneID="3Sx-Of-maT">
+            <objects>
+                <viewController title="Campus Ministry" id="MVr-Rg-12E" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6fw-pB-ugy"/>
+                        <viewControllerLayoutGuide type="bottom" id="EJB-uu-t7w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iCK-JW-yXS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wjl-XQ-QuU">
+                                <rect key="frame" x="50" y="92" width="314" height="83"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-xC-Ukj">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="41"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Campus Ministry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkX-B7-GTd">
+                                        <rect key="frame" x="0.0" y="41" width="314" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhV-je-649">
+                                <rect key="frame" x="21" y="183.00000000000003" width="372" height="243.66666666666671"/>
+                                <string key="text">Campus Ministry is an active and important part of our school community. Programs allow young men and women to explore together what faith and service mean in their lives. We strongly believe that service to our community is a central part of our Catholic identity. Therefore, all students are required to perform 15 hours of service to the community, any school, parish or any non-profit organization, including Badin High School.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chapelimage1" translatesAutoresizingMaskIntoConstraints="NO" id="rDH-Cm-rpf">
+                                <rect key="frame" x="76" y="396" width="262" height="320"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rDH-Cm-rpf" firstAttribute="top" secondItem="iCK-JW-yXS" secondAttribute="topMargin" constant="396" id="AUI-Vq-yJn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="rDH-Cm-rpf" secondAttribute="bottom" constant="20" id="GED-IC-kwE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wjl-XQ-QuU" secondAttribute="trailing" constant="30" id="GEd-n0-pe4"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Wjl-XQ-QuU" secondAttribute="bottom" constant="561" id="P31-8x-Y8p"/>
+                            <constraint firstItem="jhV-je-649" firstAttribute="leading" secondItem="iCK-JW-yXS" secondAttribute="leadingMargin" constant="1" id="SxN-DD-Kr5"/>
+                            <constraint firstItem="rDH-Cm-rpf" firstAttribute="leading" secondItem="iCK-JW-yXS" secondAttribute="leadingMargin" constant="56" id="XC3-VY-UiD"/>
+                            <constraint firstItem="Wjl-XQ-QuU" firstAttribute="leading" secondItem="iCK-JW-yXS" secondAttribute="leadingMargin" constant="30" id="ZEa-Fy-Bik"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jhV-je-649" secondAttribute="trailing" constant="1" id="bDb-5O-u9E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rDH-Cm-rpf" secondAttribute="trailing" constant="56" id="enO-Uq-cLx"/>
+                            <constraint firstItem="Wjl-XQ-QuU" firstAttribute="top" secondItem="iCK-JW-yXS" secondAttribute="topMargin" constant="92" id="tDi-x4-Htq"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jhV-je-649" secondAttribute="bottom" constant="309.32999999999998" id="uaO-8k-wdu"/>
+                            <constraint firstItem="jhV-je-649" firstAttribute="top" secondItem="iCK-JW-yXS" secondAttribute="topMargin" constant="183" id="w1B-TJ-4RJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OwN-12-2A5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLt-2B-SYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="1553"/>
+        </scene>
+        <!--Clubs & Activities-->
+        <scene sceneID="zBX-RL-LfG">
+            <objects>
+                <viewController title="Clubs &amp; Activities" id="qwC-Zq-ejC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rEJ-ik-qXD"/>
+                        <viewControllerLayoutGuide type="bottom" id="eE9-ks-gCo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pb4-US-gix">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vQO-aw-y6x">
+                                <rect key="frame" x="56" y="93.999999999999986" width="302.33333333333331" height="82.666666666666643"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu4-Iz-eo1">
+                                        <rect key="frame" x="0.0" y="0.0" width="302.33333333333331" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clubs &amp; Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ky0-qJ-JRu">
+                                        <rect key="frame" x="0.0" y="40.666666666666657" width="302.33333333333331" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIZ-B5-DRV">
+                                <rect key="frame" x="10" y="160" width="394" height="426.33333333333337"/>
+                                <string key="text">
+Ambassador Program - Mr. Allen
+AMP (Athletes Making Progress) - 
+Mr. Melzer
+Anthony Munoz Leadership Committee - Mr. Imhoff
+Badin Studio (art) - Mrs. Daniels
+Choir - Ms. Brown
+Civics Day - Mr. Mears &amp; Mr. Keating
+Creative Writing Club - Mr. O'Hara
+Culinary - Mr. Gretz and Mrs. Bierbaum
+DECA - Mr. DeAngelo &amp; Mr. McCabe
+French Club - Mrs. McAdams
+INTERalliance - Mr. Memory &amp; Mr. Gretz
+JSA - Mr. Keating
+Liturgy Participants/Mass Singers - 
+Mr. &amp; Mrs. McCormick
+National Honor Society - Mr. Merz &amp; Mrs. Minton
+Spanish Club - Mrs. Oliver and Mrs. Lyons
+Spirit Club - Mrs. Suedkamp
+Student Council - Mrs. Keating</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vQO-aw-y6x" firstAttribute="top" secondItem="rEJ-ik-qXD" secondAttribute="bottom" constant="30" id="AC4-XO-B5d"/>
+                            <constraint firstItem="PIZ-B5-DRV" firstAttribute="top" secondItem="pb4-US-gix" secondAttribute="top" constant="160" id="MaP-Sq-jTM"/>
+                            <constraint firstAttribute="trailing" secondItem="PIZ-B5-DRV" secondAttribute="trailing" constant="10" id="Wo2-a4-bRm"/>
+                            <constraint firstItem="vQO-aw-y6x" firstAttribute="centerX" secondItem="pb4-US-gix" secondAttribute="centerX" id="hqI-6V-hXF"/>
+                            <constraint firstItem="PIZ-B5-DRV" firstAttribute="centerX" secondItem="pb4-US-gix" secondAttribute="centerX" id="o5p-KP-rj2"/>
+                            <constraint firstItem="PIZ-B5-DRV" firstAttribute="leading" secondItem="pb4-US-gix" secondAttribute="leading" constant="10" id="u0d-aG-3O9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OfE-OG-4bq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pw3-X6-91Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="893"/>
+        </scene>
+        <!--Daily Announcements-->
+        <scene sceneID="BPO-ar-SxC">
+            <objects>
+                <viewController title="Daily Announcements" id="RoN-tN-yDT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7EP-uI-MDN"/>
+                        <viewControllerLayoutGuide type="bottom" id="l4F-Ot-hWN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gXN-3l-2fS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H4t-hS-vCu">
+                                <rect key="frame" x="38" y="93.999999999999986" width="338.33333333333331" height="82.666666666666643"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WI-Ul-1oG">
+                                        <rect key="frame" x="18" y="0.0" width="302.33333333333331" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Announcements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrl-vb-KdZ">
+                                        <rect key="frame" x="0.0" y="40.666666666666657" width="338.33333333333331" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4O1-M1-spx">
+                                <rect key="frame" x="21" y="189" width="372" height="345"/>
+                                <string key="text">12-16-2016 Morning Announcements
+posted Dec 16, 2016, 8:22 AM by Nancy Gersbach
+
+Badin Baseball Players - please check your email.
+There are cards on the table outside the Campus Ministry Office for anyone to sign up for the 2nd grade Springdale boy who asked for Cards for Christmas.  If you have any questions, see Reagan Hassler.
+There will be a meeting for any boy interested in playing Volleyball this spring today at 2:45 p.m. in the cafeteria.
+Make sure you're looking at your Holiday Calendar and working on your Random Acts of Kindness this Advent season!</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4O1-M1-spx" secondAttribute="trailing" constant="1" id="4yi-17-ZJz"/>
+                            <constraint firstItem="4O1-M1-spx" firstAttribute="leading" secondItem="gXN-3l-2fS" secondAttribute="leadingMargin" constant="1" id="GJh-qr-HFF"/>
+                            <constraint firstItem="4O1-M1-spx" firstAttribute="top" secondItem="7EP-uI-MDN" secondAttribute="bottom" constant="125" id="Uhi-F7-Hwu"/>
+                            <constraint firstItem="H4t-hS-vCu" firstAttribute="centerX" secondItem="gXN-3l-2fS" secondAttribute="centerX" id="XWW-IO-Px0"/>
+                            <constraint firstItem="H4t-hS-vCu" firstAttribute="top" secondItem="7EP-uI-MDN" secondAttribute="bottom" constant="30" id="ZqI-Bu-cxb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="R0n-Rq-geM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHK-8K-aoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="1553"/>
+        </scene>
+        <!--M & M Program-->
+        <scene sceneID="dow-9O-yYV">
+            <objects>
+                <viewController title="M &amp; M Program" id="634-yn-RVx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wEf-x9-MIO"/>
+                        <viewControllerLayoutGuide type="bottom" id="4PZ-dp-f05"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EGt-7r-xNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Oo-Bk-uxt">
+                                <rect key="frame" x="56.333333333333343" y="93.999999999999986" width="302.33333333333337" height="82.666666666666643"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQB-yT-BUe">
+                                        <rect key="frame" x="0.0" y="0.0" width="302.33333333333337" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M &amp; M Program" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="in1-aJ-g6n">
+                                        <rect key="frame" x="0.0" y="40.666666666666657" width="302.33333333333337" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjG-bX-7rK">
+                                <rect key="frame" x="21" y="185.00000000000003" width="372" height="243.66666666666671"/>
+                                <string key="text">The mentors for the M&amp;M program are a group of 35 seniors. 
+Any students, freshmen through seniors, can sign up to be a mentee. 
+The M&amp;M program is to help kids who are bullied, need help solving a conflict between a friend or friends, need someone there to listen to them, or just need to vent. 
+Kids are encouraged to sign up for this program no matter how big or small the issue is. 
+Everything that is said in the meetings with the mentors and mentees will be kept confidential. </string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="m&amp;mholdinghands" translatesAutoresizingMaskIntoConstraints="NO" id="6Lx-we-7wG">
+                                <rect key="frame" x="44" y="458" width="326" height="137"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Lx-we-7wG" secondAttribute="trailing" constant="24" id="PQy-nY-FUC"/>
+                            <constraint firstItem="2Oo-Bk-uxt" firstAttribute="top" secondItem="wEf-x9-MIO" secondAttribute="bottom" constant="30" id="SAR-2E-lfh"/>
+                            <constraint firstItem="QjG-bX-7rK" firstAttribute="leading" secondItem="EGt-7r-xNJ" secondAttribute="leadingMargin" constant="1" id="TgD-37-m6j"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="QjG-bX-7rK" secondAttribute="bottom" constant="307.32999999999998" id="Wt6-8Q-IiU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QjG-bX-7rK" secondAttribute="trailing" constant="1" id="dEW-Mc-35L"/>
+                            <constraint firstItem="2Oo-Bk-uxt" firstAttribute="centerX" secondItem="EGt-7r-xNJ" secondAttribute="centerX" id="hZr-hA-oB6"/>
+                            <constraint firstItem="QjG-bX-7rK" firstAttribute="top" secondItem="EGt-7r-xNJ" secondAttribute="topMargin" constant="185" id="ows-gI-0D1"/>
+                            <constraint firstItem="6Lx-we-7wG" firstAttribute="leading" secondItem="EGt-7r-xNJ" secondAttribute="leadingMargin" constant="24" id="qGE-Y6-u50"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6Lx-we-7wG" secondAttribute="bottom" constant="141" id="qgu-Og-uWM"/>
+                            <constraint firstItem="6Lx-we-7wG" firstAttribute="top" secondItem="EGt-7r-xNJ" secondAttribute="topMargin" constant="458" id="tZ1-L9-zsD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uL2-Ns-Ahe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSn-hR-4gX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="1553"/>
+        </scene>
+        <!--Scholarship Opportunities-->
+        <scene sceneID="TN9-rN-sXb">
+            <objects>
+                <viewController title="Scholarship Opportunities" id="8Rm-jE-GnV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6QA-cH-XTj"/>
+                        <viewControllerLayoutGuide type="bottom" id="JjO-tE-nOw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oiS-If-itR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FYf-mC-tqx">
+                                <rect key="frame" x="56.666666666666657" y="93.999999999999986" width="302.33333333333337" height="70.666666666666643"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxf-Vj-jeo">
+                                        <rect key="frame" x="0.0" y="0.0" width="302.33333333333331" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scholarship Opportunities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiQ-gI-Yd0">
+                                        <rect key="frame" x="7" y="40.666666666666657" width="288.66666666666663" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECc-74-KRn">
+                                <rect key="frame" x="21" y="188.99999999999997" width="372" height="304.33333333333326"/>
+                                <string key="text">Current college scholarships for seniors only:
+
+1.) Ann Beer Memorial Scholarship - Education majors to Miami University
+2.) Mike Cappa Memorial Scholarship - Business majors to Miami University
+3.) Patrick Connelly Memorial Scholarship  - Any major to Miami University
+4.) Dr. Kenneth ‘49 and Marlene Fiehrer Scholarship - Science or math major at University of Dayton or St. Louis University (engineering, pre-med or pre-dentistry preferred)
+5.) Let Us Never Forget: SSG Robert A. Massarelli Scholarship</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ECc-74-KRn" firstAttribute="top" secondItem="6QA-cH-XTj" secondAttribute="bottom" constant="125" id="0re-td-yoP"/>
+                            <constraint firstItem="ECc-74-KRn" firstAttribute="leading" secondItem="oiS-If-itR" secondAttribute="leadingMargin" constant="1" id="NVK-Bu-r4O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ECc-74-KRn" secondAttribute="trailing" constant="1" id="U4i-uX-0Ph"/>
+                            <constraint firstItem="FYf-mC-tqx" firstAttribute="top" secondItem="6QA-cH-XTj" secondAttribute="bottom" constant="30" id="X59-Fu-Y90"/>
+                            <constraint firstItem="FYf-mC-tqx" firstAttribute="centerX" secondItem="oiS-If-itR" secondAttribute="centerX" id="tuA-yQ-E0N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qfb-cu-keK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFN-S8-ecH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2457" y="1553"/>
+        </scene>
+        <!--Spirit Shop-->
+        <scene sceneID="oYZ-M6-A3X">
+            <objects>
+                <viewController title="Spirit Shop" id="0kZ-f3-ZwL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hoo-TT-Rlw"/>
+                        <viewControllerLayoutGuide type="bottom" id="AAL-6l-aHN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P6D-da-y3h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KfI-HK-Jf6">
+                                <rect key="frame" x="56.333333333333343" y="93.999999999999986" width="302.33333333333337" height="82.666666666666643"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-8T-tj0">
+                                        <rect key="frame" x="0.0" y="0.0" width="302.33333333333337" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spirit Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjs-d6-1vc">
+                                        <rect key="frame" x="0.0" y="40.666666666666657" width="302.33333333333337" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqV-v2-lc5">
+                                <rect key="frame" x="21" y="184" width="374" height="183"/>
+                                <string key="text">Find all of your spirit needs here! 
+Open daily after school for students.
+Open during all home volleyball games, home boys’ and girls’ basketball games. See Badin office staff for assistance during the day.
+
+Thank you for supporting Badin Catham Athletic Boosters!</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="spiritshop03" translatesAutoresizingMaskIntoConstraints="NO" id="YQy-bo-fWY">
+                                <rect key="frame" x="20" y="410" width="374" height="231"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KfI-HK-Jf6" firstAttribute="centerX" secondItem="P6D-da-y3h" secondAttribute="centerX" id="2jW-YS-AYp"/>
+                            <constraint firstItem="AAL-6l-aHN" firstAttribute="top" secondItem="YQy-bo-fWY" secondAttribute="bottom" constant="95" id="8nU-XJ-Kec"/>
+                            <constraint firstItem="YQy-bo-fWY" firstAttribute="trailing" secondItem="P6D-da-y3h" secondAttribute="trailingMargin" id="BJa-14-fgl"/>
+                            <constraint firstItem="GqV-v2-lc5" firstAttribute="trailing" secondItem="P6D-da-y3h" secondAttribute="trailingMargin" constant="1" id="ENl-hm-HD2"/>
+                            <constraint firstItem="KfI-HK-Jf6" firstAttribute="top" secondItem="Hoo-TT-Rlw" secondAttribute="bottom" constant="30" id="LnX-ad-eSM"/>
+                            <constraint firstItem="YQy-bo-fWY" firstAttribute="leading" secondItem="P6D-da-y3h" secondAttribute="leadingMargin" id="UDi-nk-HI6"/>
+                            <constraint firstItem="YQy-bo-fWY" firstAttribute="top" secondItem="GqV-v2-lc5" secondAttribute="bottom" constant="43.329999999999998" id="Zeb-Kq-mGK"/>
+                            <constraint firstItem="GqV-v2-lc5" firstAttribute="leading" secondItem="P6D-da-y3h" secondAttribute="leadingMargin" constant="1" id="h31-Fu-Oq7"/>
+                            <constraint firstItem="GqV-v2-lc5" firstAttribute="top" secondItem="Hoo-TT-Rlw" secondAttribute="bottom" constant="120" id="peU-2N-IJ7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MZI-vD-mGD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVM-Bo-5HS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818.840579710145" y="892.66304347826099"/>
+        </scene>
+        <!--Students of the Month-->
+        <scene sceneID="1yp-Kd-eAf">
+            <objects>
+                <viewController title="Students of the Month" id="gc4-kz-IsU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dmw-SX-2DE"/>
+                        <viewControllerLayoutGuide type="bottom" id="pjT-ed-mis"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6e9-Uz-gVp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w0Q-7H-Vvs">
+                                <rect key="frame" x="56.666666666666657" y="93.999999999999986" width="302.33333333333337" height="76.666666666666643"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badin Student App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7L-Qn-gNw">
+                                        <rect key="frame" x="0.0" y="0.0" width="302.33333333333331" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.14097613249999999" green="0.40273232980000001" blue="0.120253077" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Students of the Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AN-nZ-ayh">
+                                        <rect key="frame" x="2.6666666666666856" y="40.666666666666657" width="297.33333333333337" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJ1-Y2-lRO">
+                                <rect key="frame" x="21" y="179" width="372" height="142.33333333333331"/>
+                                <string key="text">Congratulations to the Students of the Month! The students were selected by a committee based on recommendations by the administration, faculty and staff.
+
+              ◈   ◈   ◈   ◈   ◈   ◈   ◈   ◈ 2016 - 2017 Students of the Month</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1617novSOM" translatesAutoresizingMaskIntoConstraints="NO" id="IAg-Ph-IpZ">
+                                <rect key="frame" x="25" y="343" width="364" height="236"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="IAg-Ph-IpZ" secondAttribute="bottom" constant="157" id="3Ho-pm-ClC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IAg-Ph-IpZ" secondAttribute="trailing" constant="5" id="3lz-wl-1gx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bJ1-Y2-lRO" secondAttribute="trailing" constant="1" id="6Ap-z8-s2i"/>
+                            <constraint firstItem="w0Q-7H-Vvs" firstAttribute="top" secondItem="dmw-SX-2DE" secondAttribute="bottom" constant="30" id="EO5-am-5WL"/>
+                            <constraint firstItem="bJ1-Y2-lRO" firstAttribute="leading" secondItem="6e9-Uz-gVp" secondAttribute="leadingMargin" constant="1" id="GiM-tw-v4e"/>
+                            <constraint firstItem="IAg-Ph-IpZ" firstAttribute="leading" secondItem="6e9-Uz-gVp" secondAttribute="leadingMargin" constant="5" id="QeM-2q-qBr"/>
+                            <constraint firstItem="IAg-Ph-IpZ" firstAttribute="top" secondItem="6e9-Uz-gVp" secondAttribute="topMargin" constant="343" id="hoE-pD-d75"/>
+                            <constraint firstItem="bJ1-Y2-lRO" firstAttribute="top" secondItem="dmw-SX-2DE" secondAttribute="bottom" constant="115" id="liH-qD-9Ty"/>
+                            <constraint firstItem="w0Q-7H-Vvs" firstAttribute="centerX" secondItem="6e9-Uz-gVp" secondAttribute="centerX" id="rp3-WX-boS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nv0-CE-ieG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhJ-fM-5YV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456.521739130435" y="892.66304347826099"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8eG-EO-CHj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9KW-tu-ENE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HHG-2s-JYb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="M9B-Hn-yo6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iH6-jD-XiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="148"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1617novSOM" width="400" height="267"/>
+        <image name="badin-rams" width="788" height="304"/>
+        <image name="chapelimage1" width="240" height="320"/>
+        <image name="m&amp;mholdinghands" width="500" height="198"/>
+        <image name="spiritshop03" width="1024" height="768"/>
+    </resources>
 </document>

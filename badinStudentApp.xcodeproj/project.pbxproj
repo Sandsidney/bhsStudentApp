@@ -12,6 +12,7 @@
 		BEC8C8BE1E0AE5190051EAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC8C8BC1E0AE5190051EAE6 /* Main.storyboard */; };
 		BEC8C8C01E0AE5190051EAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC8C8BF1E0AE5190051EAE6 /* Assets.xcassets */; };
 		BEC8C8C31E0AE5190051EAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC8C8C11E0AE5190051EAE6 /* LaunchScreen.storyboard */; };
+		BECE2D2C1E0C3BC5008CC2B3 /* calculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECE2D2B1E0C3BC5008CC2B3 /* calculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BEC8C8BF1E0AE5190051EAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEC8C8C21E0AE5190051EAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEC8C8C41E0AE5190051EAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECE2D2B1E0C3BC5008CC2B3 /* calculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				BEC8C8B81E0AE5190051EAE6 /* AppDelegate.swift */,
 				BEC8C8BA1E0AE5190051EAE6 /* ViewController.swift */,
 				BEC8C8BC1E0AE5190051EAE6 /* Main.storyboard */,
+				BECE2D2B1E0C3BC5008CC2B3 /* calculatorViewController.swift */,
 				BEC8C8BF1E0AE5190051EAE6 /* Assets.xcassets */,
 				BEC8C8C11E0AE5190051EAE6 /* LaunchScreen.storyboard */,
 				BEC8C8C41E0AE5190051EAE6 /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC8C8BB1E0AE5190051EAE6 /* ViewController.swift in Sources */,
+				BECE2D2C1E0C3BC5008CC2B3 /* calculatorViewController.swift in Sources */,
 				BEC8C8B91E0AE5190051EAE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				BEC8C8C91E0AE5190051EAE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
