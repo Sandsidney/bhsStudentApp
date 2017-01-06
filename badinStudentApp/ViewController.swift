@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     var countingNum = 0
     
 //counting method 
-
+//conditional if statement in every action function button
 //array in playground because error wouldnt let table view be entered into code.
     
     @IBOutlet weak var onceARamLabel: UILabel!
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             
         }//end of if statement
     }
-    
+//code for the clubs & activities button
     @IBAction func clubsActivities(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
             
         }//end of if statement
     }
-    
+//code for the spirit shop button
     @IBAction func spiritShop(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
             
         }//end of if statement
     }
-    
+//code for the student of the month button
     @IBAction func studentMonth(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
             
         }//end of if statement
     }
-    
+// code for the m & m program buton
     @IBAction func mmProgram(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
             
         }//end of if statement
     }
-    
+    //code for the daily announcements button
     @IBAction func dailyAnnounc(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
@@ -92,7 +92,7 @@ class ViewController: UIViewController {
             
         }//end of if statement
     }
-    
+//code for the cafetiria menu button
     @IBAction func cafMenu(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
@@ -102,7 +102,7 @@ class ViewController: UIViewController {
             
         }//end of if statement
     }
-    
+//code for the scholarship opportunities button
     @IBAction func scholarOpp(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
@@ -112,8 +112,7 @@ class ViewController: UIViewController {
             
         }//end of if statement
     }
-    
-    
+//code for th calculator button
     @IBAction func calculator(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
@@ -125,10 +124,7 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
-    
-}
+}//end  of code
 
 
 

@@ -25,14 +25,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badin-rams" translatesAutoresizingMaskIntoConstraints="NO" id="QUH-Ol-1ld">
                                 <rect key="frame" x="34" y="64" width="346" height="156"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jiq-3R-9Vj">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jiq-3R-9Vj">
                                 <rect key="frame" x="75" y="289" width="264" height="336"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="left" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lt4-FC-Pqh">
+                                    <stackView opaque="NO" contentMode="left" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lt4-FC-Pqh">
                                         <rect key="frame" x="0.0" y="0.0" width="159" height="336"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Fjb-OZ-VVs">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Fjb-OZ-VVs">
                                                 <rect key="frame" x="0.0" y="0.0" width="159" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Bell  Schedule">
@@ -43,7 +42,7 @@
                                                     <segue destination="s67-If-xoJ" kind="push" id="ZxC-mV-NH5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-iO-ZlO">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-iO-ZlO">
                                                 <rect key="frame" x="0.0" y="75" width="159" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Spirit Shop">
@@ -54,7 +53,7 @@
                                                     <segue destination="0kZ-f3-ZwL" kind="push" id="BFu-Xc-T5E"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SYL-Kh-y3d">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SYL-Kh-y3d">
                                                 <rect key="frame" x="0.0" y="126" width="159" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal">
@@ -67,7 +66,7 @@ the Month</string>
                                                     <segue destination="gc4-kz-IsU" kind="push" id="t9z-mW-GeJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-Jg-tuq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-Jg-tuq">
                                                 <rect key="frame" x="0.0" y="201" width="159" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal">
@@ -80,7 +79,7 @@ Announcements</string>
                                                     <segue destination="RoN-tN-yDT" kind="push" id="Be5-0P-27r"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iFm-cF-ftv">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iFm-cF-ftv">
                                                 <rect key="frame" x="0.0" y="276" width="159" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal">
@@ -95,10 +94,10 @@ Opportunities</string>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qBn-6M-3zw">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qBn-6M-3zw">
                                         <rect key="frame" x="164" y="0.0" width="100" height="336"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jp6-7b-nOE">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jp6-7b-nOE">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Clubs &amp;  Activities">
@@ -109,7 +108,7 @@ Opportunities</string>
                                                     <segue destination="qwC-Zq-ejC" kind="push" id="YR0-pp-cDr"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="egV-xf-7hT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="egV-xf-7hT">
                                                 <rect key="frame" x="0.0" y="75" width="100" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Campus  Ministry">
@@ -119,7 +118,7 @@ Opportunities</string>
                                                     <segue destination="MVr-Rg-12E" kind="push" id="bLL-2X-8tX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GX8-lW-2oJ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GX8-lW-2oJ">
                                                 <rect key="frame" x="0.0" y="150" width="100" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="M &amp; M  Program">
@@ -130,7 +129,7 @@ Opportunities</string>
                                                     <segue destination="634-yn-RVx" kind="push" id="ntN-zA-8Od"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ilr-m2-DsP">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ilr-m2-DsP">
                                                 <rect key="frame" x="0.0" y="225" width="100" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Cafeteria  Menu">
@@ -141,7 +140,7 @@ Opportunities</string>
                                                     <segue destination="w2L-gO-zDl" kind="push" id="hWU-4F-fTJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2X1-ej-bd2">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2X1-ej-bd2">
                                                 <rect key="frame" x="0.0" y="300" width="100" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Calculator">
@@ -156,9 +155,8 @@ Opportunities</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Once a Ram, Always a Ram" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-8C-5uc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Once a Ram, Always a Ram" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-8C-5uc">
                                 <rect key="frame" x="20" y="200" width="374" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -166,10 +164,16 @@ Opportunities</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bGZ-8C-5uc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7qm-ro-rZb"/>
                             <constraint firstItem="QUH-Ol-1ld" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="64" id="ATz-rv-LmM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QUH-Ol-1ld" secondAttribute="trailing" constant="14" id="E5D-HJ-uuQ"/>
+                            <constraint firstItem="jiq-3R-9Vj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="P1W-M2-UA7"/>
                             <constraint firstItem="QUH-Ol-1ld" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="PwW-aV-7dH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jiq-3R-9Vj" secondAttribute="trailing" constant="55" id="TA0-dS-Ba6"/>
+                            <constraint firstItem="bGZ-8C-5uc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="200" id="Wqv-eh-ahe"/>
                             <constraint firstAttribute="bottomMargin" secondItem="QUH-Ol-1ld" secondAttribute="bottom" constant="516" id="i8j-dy-FP9"/>
+                            <constraint firstItem="jiq-3R-9Vj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="289" id="jMh-Tc-xUW"/>
+                            <constraint firstItem="bGZ-8C-5uc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nBB-TN-AzC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome To The Badin Student App" id="JFD-cQ-hbS"/>
