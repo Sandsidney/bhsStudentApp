@@ -26,7 +26,7 @@
                                 <rect key="frame" x="34" y="64" width="346" height="156"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jiq-3R-9Vj">
-                                <rect key="frame" x="75" y="256" width="264" height="336"/>
+                                <rect key="frame" x="75" y="289" width="264" height="336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="left" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lt4-FC-Pqh">
@@ -156,6 +156,13 @@ Opportunities</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Once a Ram, Always a Ram" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGZ-8C-5uc">
+                                <rect key="frame" x="20" y="200" width="374" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -166,6 +173,9 @@ Opportunities</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome To The Badin Student App" id="JFD-cQ-hbS"/>
+                    <connections>
+                        <outlet property="onceARamLabel" destination="bGZ-8C-5uc" id="BkK-TZ-7Rd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -503,11 +513,17 @@ All items subject to change</string>
                                         <rect key="frame" x="154" y="0.0" width="71" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Multiply"/>
+                                        <connections>
+                                            <action selector="multiplyButton:" destination="vEC-gY-FOy" eventType="touchUpInside" id="4vF-aT-mSp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBa-pl-E1t">
                                         <rect key="frame" x="245" y="0.0" width="57" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Divide"/>
+                                        <connections>
+                                            <action selector="divideButton:" destination="vEC-gY-FOy" eventType="touchUpInside" id="yBv-NS-X5L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

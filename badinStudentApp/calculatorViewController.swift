@@ -28,14 +28,23 @@ class calculatorViewController: UIViewController {
     
     @IBAction func addButton(_ sender: AnyObject) {
         anwerBoxLabel.text = String (Double (textField1.text!)! + Double (textField2.text!)!)
-        //When Tapped, program will add the text fields together
+        //When Tapped, program will add the text fields
     }
     
     @IBAction func subtractButton(_ sender: AnyObject) {
         anwerBoxLabel.text = String (Double (textField1.text!)! - Double (textField2.text!)!)
+        //When Tapped, program will subtract the text fields
     }
     
+    @IBAction func multiplyButton(_ sender: AnyObject) {
+        anwerBoxLabel.text = String (Double (textField1.text!)! * Double (textField2.text!)!)
+        //When Tapped, program will multiply the text fields
+    }
     
+    @IBAction func divideButton(_ sender: AnyObject) {
+        anwerBoxLabel.text = String (Double (textField1.text!)! / Double (textField2.text!)!)
+        //When Tapped, program will divide the text fields
+    }
     
     
     

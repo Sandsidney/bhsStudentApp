@@ -26,10 +26,10 @@ class ViewController: UIViewController {
     var countingNum = 0
     
 //counting method 
+
+//array in playground because error wouldnt let table view be entered into code.
     
-    
-    
-    
+    @IBOutlet weak var onceARamLabel: UILabel!
     
     
     
@@ -37,48 +37,80 @@ class ViewController: UIViewController {
         countingNum = countingNum+1
         print(countingNum)
         print("Bell Scheduale Button Pushed")
+        if (countingNum >= 3) {
+            onceARamLabel.text = "Welcome to the Badin Student App!!"
+            
+        }//end of if statement
     }
     
     @IBAction func clubsActivities(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
         print("Clubs & Activities Button Pushed")
+        if (countingNum >= 3) {
+            onceARamLabel.text = "Welcome to the Badin Student App!!"
+            
+        }//end of if statement
     }
     
     @IBAction func spiritShop(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
         print("Spirit Shop Button Pushed")
+        if (countingNum >= 3) {
+            onceARamLabel.text = "Welcome to the Badin Student App!!"
+            
+        }//end of if statement
     }
     
     @IBAction func studentMonth(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
         print("Student of the Month Button Pushed")
+        if (countingNum >= 3) {
+            onceARamLabel.text = "Welcome to the Badin Student App!!"
+            
+        }//end of if statement
     }
     
     @IBAction func mmProgram(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
         print("M&M Program Button Pushed")
+        if (countingNum >= 3) {
+            onceARamLabel.text = "Welcome to the Badin Student App!!"
+            
+        }//end of if statement
     }
     
     @IBAction func dailyAnnounc(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
         print("Daily Announcements Button Pushed")
+        if (countingNum >= 3) {
+            onceARamLabel.text = "Welcome to the Badin Student App!!"
+            
+        }//end of if statement
     }
     
     @IBAction func cafMenu(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
         print("Cafetiria Menu Button Pushed")
+        if (countingNum >= 3) {
+            onceARamLabel.text = "Welcome to the Badin Student App!!"
+            
+        }//end of if statement
     }
     
     @IBAction func scholarOpp(_ sender: UIButton) {
         countingNum = countingNum+1
         print(countingNum)
         print("Scholarship Opportunities Button Pushed")
+        if (countingNum >= 3) {
+            onceARamLabel.text = "Welcome to the Badin Student App!!"
+            
+        }//end of if statement
     }
     
     
@@ -86,6 +118,10 @@ class ViewController: UIViewController {
         countingNum = countingNum+1
         print(countingNum)
         print("Calculator Button Pushed")
+        if (countingNum >= 3) {
+            onceARamLabel.text = "Welcome to the Badin Student App!!"
+            
+        }//end of if statement
     }
     
     
