@@ -25,34 +25,35 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badin-rams" translatesAutoresizingMaskIntoConstraints="NO" id="QUH-Ol-1ld">
                                 <rect key="frame" x="34" y="64" width="346" height="156"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6Z6-Yd-BB5">
-                                <rect key="frame" x="68" y="228" width="279" height="336"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jiq-3R-9Vj">
+                                <rect key="frame" x="75" y="256" width="264" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="left" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oaD-rD-UiO">
-                                        <rect key="frame" x="0.0" y="0.0" width="164" height="336"/>
+                                    <stackView opaque="NO" contentMode="left" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lt4-FC-Pqh">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="336"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zXv-rW-4zY">
-                                                <rect key="frame" x="0.0" y="0.0" width="164" height="60"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Fjb-OZ-VVs">
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Bell  Schedule">
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="s67-If-xoJ" kind="push" id="Ids-9b-Pvf"/>
+                                                    <action selector="bellScheduale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzS-cV-QnN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBe-7I-Bj0">
-                                                <rect key="frame" x="0.0" y="75" width="164" height="36"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-iO-ZlO">
+                                                <rect key="frame" x="0.0" y="75" width="159" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Spirit Shop">
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="0kZ-f3-ZwL" kind="push" id="b6D-ne-hVX"/>
+                                                    <action selector="spiritShop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ik2-Wj-Obk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Nah-FX-Pot">
-                                                <rect key="frame" x="0.0" y="126" width="164" height="60"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SYL-Kh-y3d">
+                                                <rect key="frame" x="0.0" y="126" width="159" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal">
                                                     <string key="title">Students of 
@@ -60,11 +61,11 @@ the Month</string>
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="gc4-kz-IsU" kind="push" id="UPS-QO-5GD"/>
+                                                    <action selector="studentMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F6w-qS-YTG"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mjf-5O-vCs">
-                                                <rect key="frame" x="0.0" y="201" width="164" height="60"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-Jg-tuq">
+                                                <rect key="frame" x="0.0" y="201" width="159" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal">
                                                     <string key="title">Daily 
@@ -72,11 +73,11 @@ Announcements</string>
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="RoN-tN-yDT" kind="push" id="LEL-sk-7pz"/>
+                                                    <action selector="dailyAnnounc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydd-yx-UUE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RlI-F0-gMR">
-                                                <rect key="frame" x="0.0" y="276" width="164" height="60"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="iFm-cF-ftv">
+                                                <rect key="frame" x="0.0" y="276" width="159" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal">
                                                     <string key="title">Scholarship
@@ -84,62 +85,59 @@ Opportunities</string>
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="8Rm-jE-GnV" kind="push" id="Hui-jD-OGJ"/>
+                                                    <action selector="scholarOpp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLd-bV-3Qh"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-6c-9uM">
-                                        <rect key="frame" x="179" y="0.0" width="100" height="336"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qBn-6M-3zw">
+                                        <rect key="frame" x="164" y="0.0" width="100" height="336"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Rm1-uC-JTn">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jp6-7b-nOE">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Clubs &amp;  Activities">
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="qwC-Zq-ejC" kind="push" id="HW8-oE-oXS"/>
+                                                    <action selector="clubsActivities:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJI-FU-Jsd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="u3O-dy-Aw1">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="egV-xf-7hT">
                                                 <rect key="frame" x="0.0" y="75" width="100" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Campus  Ministry">
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="MVr-Rg-12E" kind="push" id="FAc-t6-Rlv"/>
-                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cYZ-ED-3lb">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GX8-lW-2oJ">
                                                 <rect key="frame" x="0.0" y="150" width="100" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="M &amp; M  Program">
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="634-yn-RVx" kind="push" id="f7e-HQ-jCL"/>
+                                                    <action selector="mmProgram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O02-PZ-Q6y"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uM5-Ou-PgY">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ilr-m2-DsP">
                                                 <rect key="frame" x="0.0" y="225" width="100" height="60"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Cafeteria  Menu">
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="w2L-gO-zDl" kind="push" identifier="cafiteriaMenu" id="Uv3-V8-P3R"/>
+                                                    <action selector="cafMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vjo-zI-Dyf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="OX8-3t-Esu">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2X1-ej-bd2">
                                                 <rect key="frame" x="0.0" y="300" width="100" height="36"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <state key="normal" title="Calculator">
                                                     <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="vEC-gY-FOy" kind="push" identifier="Calculator" id="aln-8B-xiy"/>
+                                                    <action selector="calculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSj-iw-sDz"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -149,12 +147,9 @@ Opportunities</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Z6-Yd-BB5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="1Te-v3-tFv"/>
                             <constraint firstItem="QUH-Ol-1ld" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="64" id="ATz-rv-LmM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QUH-Ol-1ld" secondAttribute="trailing" constant="14" id="E5D-HJ-uuQ"/>
-                            <constraint firstItem="6Z6-Yd-BB5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="228" id="POL-jJ-3bU"/>
                             <constraint firstItem="QUH-Ol-1ld" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="PwW-aV-7dH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6Z6-Yd-BB5" secondAttribute="trailing" constant="47" id="Ssa-Ru-7Ml"/>
                             <constraint firstAttribute="bottomMargin" secondItem="QUH-Ol-1ld" secondAttribute="bottom" constant="516" id="i8j-dy-FP9"/>
                         </constraints>
                     </view>
@@ -163,6 +158,130 @@ Opportunities</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1695.6521739130435" y="147.55434782608697"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="owh-Rb-gUH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHH-64-Vdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="irX-IS-RtD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l9d-lr-2CL"/>
+                        <viewControllerLayoutGuide type="bottom" id="XxU-v2-tRD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YWL-Cj-EaK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bbw-Rp-9gX">
+                                <rect key="frame" x="70" y="224" width="274" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="left" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Otj-b6-uGL">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="i4e-qU-udp">
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Bell  Schedule">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7E-p2-xTs">
+                                                <rect key="frame" x="0.0" y="75" width="159" height="36"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Spirit Shop">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wew-xj-20Y">
+                                                <rect key="frame" x="0.0" y="126" width="159" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal">
+                                                    <string key="title">Students of 
+the Month</string>
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xdj-sz-TnH">
+                                                <rect key="frame" x="0.0" y="201" width="159" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal">
+                                                    <string key="title">Daily 
+Announcements</string>
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yzN-xj-Op4">
+                                                <rect key="frame" x="0.0" y="276" width="159" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal">
+                                                    <string key="title">Scholarship
+Opportunities</string>
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zhI-O4-Dcx">
+                                        <rect key="frame" x="174" y="0.0" width="100" height="336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GDf-sF-ech">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Clubs &amp;  Activities">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1ue-u3-lyG">
+                                                <rect key="frame" x="0.0" y="75" width="100" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Campus  Ministry">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="campusMinistryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJt-m9-rc4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QMV-xe-6tH">
+                                                <rect key="frame" x="0.0" y="150" width="100" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="M &amp; M  Program">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="mmProgramButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bx4-DA-HIR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="KnW-F1-F5s">
+                                                <rect key="frame" x="0.0" y="225" width="100" height="60"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Cafeteria  Menu">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cafMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BhW-DL-acZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NAV-Ka-nH0">
+                                                <rect key="frame" x="0.0" y="300" width="100" height="36"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <state key="normal" title="Calculator">
+                                                    <color key="titleColor" red="0.084723662249999998" green="0.42891034030000003" blue="0.0529428724" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="calculatorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKZ-lK-ieB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2599" y="148"/>
         </scene>
         <!--Bell Schedule-->
         <scene sceneID="FXD-IS-662">

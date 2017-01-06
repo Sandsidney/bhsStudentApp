@@ -20,7 +20,68 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+//start app code
+    
+    var countingNum = 0
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @IBAction func bellScheduale(_ sender: UIButton) {
+        countingNum = countingNum+1
+        print(countingNum)
+    }
+    
+    @IBAction func clubsActivities(_ sender: UIButton) {
+        countingNum = countingNum+1
+        print(countingNum)
+    }
+    
+    @IBAction func spiritShop(_ sender: UIButton) {
+        countingNum = countingNum+1
+        print(countingNum)
+    }
+    
+    @IBAction func studentMonth(_ sender: UIButton) {
+        countingNum = countingNum+1
+        print(countingNum)
+    }
+    
+    @IBAction func mmProgram(_ sender: UIButton) {
+        countingNum = countingNum+1
+        print(countingNum)
+    }
+    
+    @IBAction func dailyAnnounc(_ sender: UIButton) {
+        countingNum = countingNum+1
+        print(countingNum)
+    }
+    
+    @IBAction func cafMenu(_ sender: UIButton) {
+        countingNum = countingNum+1
+        print(countingNum)
+    }
+    
+    @IBAction func scholarOpp(_ sender: UIButton) {
+        countingNum = countingNum+1
+        print(countingNum)
+    }
+    
+    
+    @IBAction func calculator(_ sender: UIButton) {
+        countingNum = countingNum+1
+        print(countingNum)
+    }
+    
+    
+    
+    
     
 }
 
