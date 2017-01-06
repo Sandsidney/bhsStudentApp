@@ -487,11 +487,17 @@ All items subject to change</string>
                                         <rect key="frame" x="0.0" y="0.0" width="37" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addButton:" destination="vEC-gY-FOy" eventType="touchUpInside" id="ZE8-4U-OKP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-fT-p14">
                                         <rect key="frame" x="57" y="0.0" width="77" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Subtract"/>
+                                        <connections>
+                                            <action selector="subtractButton:" destination="vEC-gY-FOy" eventType="touchUpInside" id="tVb-aP-I84"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htW-CN-efd">
                                         <rect key="frame" x="154" y="0.0" width="71" height="36"/>
@@ -529,6 +535,11 @@ All items subject to change</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mkF-it-jff"/>
+                    <connections>
+                        <outlet property="anwerBoxLabel" destination="zYV-JB-Xft" id="jfR-4W-ZF9"/>
+                        <outlet property="textField1" destination="xaF-5l-GfM" id="8ki-OY-veb"/>
+                        <outlet property="textField2" destination="o4U-8T-eBi" id="ggd-UW-yj7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdT-HW-alY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

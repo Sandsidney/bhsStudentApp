@@ -20,6 +20,32 @@ class calculatorViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var anwerBoxLabel: UILabel!
+    
+    @IBOutlet weak var textField1: UITextField!
+    
+    @IBOutlet weak var textField2: UITextField!
+    
+    @IBAction func addButton(_ sender: AnyObject) {
+        anwerBoxLabel.text = String (Double (textField1.text!)! + Double (textField2.text!)!)
+        //When Tapped, program will add the text fields together
+    }
+    
+    @IBAction func subtractButton(_ sender: AnyObject) {
+        anwerBoxLabel.text = String (Double (textField1.text!)! - Double (textField2.text!)!)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }
